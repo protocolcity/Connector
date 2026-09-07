@@ -1,0 +1,11 @@
+# blueprint adopt runtime state (machine-local)
+.protocolcity/
+
+# Workspace skills bridge (symlinks from skills_sync.sh — machine-local)
+.claude/skills/
+
+# Machine-local reports / operational residue (efficiency job writes here)
+local/
+
+# OS noise
+.DS_Store
