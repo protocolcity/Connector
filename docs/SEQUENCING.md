@@ -1,6 +1,6 @@
 # Connector — Sequencing Gates
 
-**Date:** 2026-07-27 · **Status:** living document — update as gates flip
+**Date:** 2026-07-27 · **Reviewed:** 2026-09-12 (conn-38) · **Status:** living document
 **Author:** reed · Connector Desk
 
 ---
@@ -25,7 +25,7 @@ file a new ticket for any regression.
 
 | # | Gate | Status | Clears |
 |---|---|---|---|
-| **G1** | **WorkLane public flip** — quiet week declared, public repo promoted | ⬜ open | All engine-side auth implementation (worklane, workforce); the implementation checkpoint for every chunk below |
+| **G1** | **WorkLane public source promotion** | ✅ done 2026-09-12: canonical public protocolcity/WorkLane, merged PR5. This establishes source promotion, not network authentication readiness. | Source-promotion dependency; other auth gates remain required. |
 | **G2** | **Identity unhardcoding** — `WL_AGENT_ID` per-citizen config; neutral fallback `you`; PROCESS §5.2 citizen-hand rows land in WorkLane | ⬜ open | Everything that names a second human citizen. Hard blocker: without this, a second MCP connection inherits default host identity. |
 | **G3** | **Multi-citizen design decisions connector needs** — CITIZENS.md schema, join flow, transport topology decided | ✅ done (design-complete, captured in JOIN_DESIGN.md) | Join config template draft; invite artifact design |
 | **G4** | **You Q1 decision — auth tier for v1 multi-citizen** (JOIN_DESIGN.md §6 Q1): trusted LAN (no enforcement) vs. bearer tokens at proxy from day one | ⬜ open | Determines whether the join config template includes a `WL_TOKEN` field; determines scope of the WorkLane auth middleware ticket |
@@ -36,6 +36,15 @@ file a new ticket for any regression.
 | **G9** | **PyPI name reserve `protocolcity-connector`** — only when shipping is imminent | ⬜ open (defer until ship pressure) | Package publish; not needed for design or local dogfood |
 
 ---
+
+### Current identity evidence
+
+Explicit local MCP authors and a dedicated implementation-worker identity have
+been demonstrated. That does not prove authenticated multi-citizen isolation,
+revocation, or remote transport. G2 remains open for those acceptance criteria;
+the earlier implication that every MCP connection must inherit one identity is
+obsolete. G4–G9 retain their individual decisions and evidence requirements.
+No network service is enabled by this documentation update.
 
 ## Project-space chat — DITCHED (city-operator 2026-07-30)
 

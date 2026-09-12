@@ -6,7 +6,7 @@ the folder/store; no second marketing name).
 **Package intent (not shipped):** `protocolcity-connector`
 **Public face:** [protocolcity/Connector](https://github.com/protocolcity/Connector)
 **Workspace L0:** city CORE AGENTS · always-work:
-`ProtocolCity/docs/specs/ALWAYS_WORK_PROCESS.md`
+`docs/specs/ALWAYS_WORK_PROCESS.md` at workspace root
 
 Fourth suite product carve: the **road layer** — host a city folder
 on the network and connect a citizen (You) to it. Join UX + client connect
@@ -32,8 +32,9 @@ Vendor pointers (`CLAUDE.md` / `GROK.md`) → `@AGENTS.md` only.
 
 - Every change ties to a `conn-*` work order. Lifecycle:
   suite WorkLane PROCESS §5.
-- Route the live lane: `worker:jiji`. The efficiency job does not drain this
-  seat. Retired papers (`reed`, `zach`) are history only.
+- Discover actual WorkForce capacity before routing. No Connector lane is
+  currently registered. Jiji, Reed and Zach papers are historical. Authorized
+  host documentation work uses `worker:you` + `you:host`.
 - **Git:** public face is **protocolcity/Connector**. Land finishing slices on
   local `main` (ff-only from the shift worktree into the primary checkout);
   cite that SHA in Links before any public push.
@@ -51,7 +52,7 @@ Vendor pointers (`CLAUDE.md` / `GROK.md`) → `@AGENTS.md` only.
 | Join UX design | [`docs/JOIN_DESIGN.md`](docs/JOIN_DESIGN.md) |
 | Auth seam (engines enforce) | [`docs/AUTH_ROAD.md`](docs/AUTH_ROAD.md) |
 | Intake workers as employees | [`docs/INTAKE_WORKERS.md`](docs/INTAKE_WORKERS.md) |
-| Active hand | [`workers/jiji/CONTRACT.md`](workers/jiji/CONTRACT.md) |
+| Historical contract | [`workers/jiji/CONTRACT.md`](workers/jiji/CONTRACT.md) |
 
 ## Tree (short)
 
@@ -61,7 +62,7 @@ Vendor pointers (`CLAUDE.md` / `GROK.md`) → `@AGENTS.md` only.
 | `ARCHITECTURE.md` | Binding structure |
 | `PROGRAMS.md` | Named lines of work |
 | `docs/` | Design vault (several **DITCHED**) |
-| `workers/jiji/` | Claiming lane |
+| `workers/jiji/` | Historical lane papers |
 | `prototypes/` · `archive/` | Retired — not product |
 
 Do not hand-edit the generated hands block (workspace jobs leak is doctor /
