@@ -52,7 +52,7 @@ Vendor pointers (`CLAUDE.md` / `GROK.md`) → `@AGENTS.md` only.
 | Join UX design | [`docs/JOIN_DESIGN.md`](docs/JOIN_DESIGN.md) |
 | Auth seam (engines enforce) | [`docs/AUTH_ROAD.md`](docs/AUTH_ROAD.md) |
 | Intake workers as employees | [`docs/INTAKE_WORKERS.md`](docs/INTAKE_WORKERS.md) |
-| Historical contract | [`workers/jiji/CONTRACT.md`](workers/jiji/CONTRACT.md) |
+| Historical worker references | Git history; no current Jiji contract is present in this checkout |
 
 ## Tree (short)
 
